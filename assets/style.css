@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #eae6f5;
+    font-family: "Poppins"
+}
+body .hero-area .header-section .brand{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+body .hero-area .header-section .brand span{
+    font-size: 22px;
+    font-weight: 700;
+    color: #4b208c;
+    padding-left: 5px;
+}
+body .hero-area .header-section{
+    padding: 16px 0rem;
+}
+body .hero-area .header-section nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+body .hero-area .header-section nav a{}
+body .hero-area .header-section nav a img{
+    width: 35px;
+}
+body .hero-area .header-section nav .nav-link ul{
+    list-style: none;
+}
+body .hero-area .header-section nav .nav-link ul li{
+    display: inline;
+}
+body .hero-area .header-section nav .nav-link ul li a{
+    text-decoration: none;
+    border-radius: 35px;
+    font-size: 15px;
+    padding: 7px 20px;
+    margin: 10px 15px;
+}body .hero-area .header-section nav .nav-link ul li a:hover{
+    background-color: #4b208c;
+    color: white;
+}
+.active{
+    background-color: #4b208c;
+    color: white;
+}
+.intro-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+.intro-section .details{
+    display: flex;
+    flex-direction: column;
+    flex: 0.4;
+}
+.intro-section .details h1{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.intro-section .right-side img {
+    width: 85%;
+    border-radius: 300px;
+    vertical-align: middle;
+    border-style: none;
+    border: 5px solid #8b24b1;
+}
