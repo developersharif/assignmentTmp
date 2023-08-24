@@ -32,7 +32,9 @@ body .hero-area .header-section nav{
     align-items: center;
     margin-bottom: 82px;
 }
-body .hero-area .header-section nav a{}
+body .hero-area .header-section nav a{
+    color:black
+}
 body .hero-area .header-section nav a img{
     width: 35px;
 }
@@ -52,9 +54,9 @@ body .hero-area .header-section nav .nav-link ul li a{
     background-color: #4b208c;
     color: white;
 }
-.active{
+body .hero-area .active{
     background-color: #4b208c;
-    color: white;
+    color: white!important;
 }
 .intro-section{
     display: flex;
@@ -394,4 +396,69 @@ width: 90px;
     align-items: center;
     flex-direction: row;
     margin: 20px;
+}
+@media (max-width: 600px){
+    body .hero-area .header-section nav {
+    flex-direction: column;
+    }
+    body .hero-area .header-section nav .nav-link ul {
+        list-style: none;
+        display: none;
+    }
+    body .intro-section {
+        flex-direction: column;
+        width: 100%;
+    }
+    .intro-section .right-side img{
+        position: relative;
+        left: 2rem;
+        margin-top: 20px;
+    }
+    .service-section .container .services {
+        flex-direction: column;
+    }
+    .intro-section .details {
+        align-items: center;
+        margin-top: -70px;
+    }
+    .intro-section .details p {
+        padding: 0 25px;
+    }
+    .intro-section .right-side .prev-button {
+        top: 48rem;
+    }    
+    .intro-section .right-side .next-button {
+        top: 48rem;
+        margin-right: -10px;
+    }
+    .about-section .container {
+        flex-direction: column;
+    }
+    .about-section .container .right {
+        flex-direction: column;
+        margin-top:25px;
+    }
+    .about-section .container .right img:first-child {
+        margin-left: -5rem;
+    }
+    .about-section .container .right img:nth-child(2) {
+        margin-top: -1rem;
+    }
+    .blog-section .container .blogs{
+        flex-direction: column;
+    }
+    .contact-section .container{
+        flex-direction: column;
+    }
+    .info-section .container .social , .info-section .container .details{
+        flex-direction: column;
+    }
+    .info-section .container .social .left {
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 0;
+    }
+    .contact-section .container .right iframe{
+        width: 100%;
+    }
 }
